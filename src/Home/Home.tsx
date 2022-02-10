@@ -31,6 +31,16 @@ function Home() {
                         <li className="list-group-item list-group-item-dark">Bootstrap</li>
                     </ul>
                 </div>
+
+                <h4>Dodatkowe</h4>
+                <div className="nav-list">
+                    <ul className="list-group">
+                        <li className="list-group-item list-group-item-secondary">Różne wzorce projektowe</li>
+                        <li className="list-group-item">Rozwiązania chmurowe</li>
+                        <li className="list-group-item list-group-item-primary">Dobre zwyczaje w web developmencie</li>
+                        <li className="list-group-item list-group-item-danger">Git - system kontroli wersji</li>
+                    </ul>
+                </div>
             </div>
             <div>
 
