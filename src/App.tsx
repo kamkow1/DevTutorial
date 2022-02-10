@@ -3,11 +3,13 @@ import './App.css';
 import NavBar from './navbar/NavBar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from "./Home/Home";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+
       {/* setup routes */}
       <BrowserRouter>
           <Switch>
@@ -16,6 +18,8 @@ function App() {
               </Route>
           </Switch>
       </BrowserRouter>
+
+      <Footer />
     </div>
   );
 }
