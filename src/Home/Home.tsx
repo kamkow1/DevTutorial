@@ -12,10 +12,14 @@ function Home() {
                 <h4>Back-end</h4>
                 <div className="nav-list">
                     <ul className="list-group">
-                        <li className="list-group-item">ASP.NET</li>
-                        <li className="list-group-item list-group-item-primary">Node.js i express.js</li>
-                        <li className="list-group-item list-group-item-secondary">Spring Framework</li>
-                        <li className="list-group-item list-group-item-success">Laravel</li>
+                        <a className="list-group-item"
+                            href="/backend/asp">ASP.NET</a>
+                        <a className="list-group-item list-group-item-primary"
+                            href="/backend/node_express">Node.js i express.js</a>
+                        <a className="list-group-item list-group-item-secondary"
+                            href="/backend/spring">Spring Framework</a>
+                        <a className="list-group-item list-group-item-success"
+                            href="/backend/laravel">Laravel</a>
                     </ul>
                 </div>
 
