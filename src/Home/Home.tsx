@@ -22,23 +22,32 @@ function Home() {
                 <h4>Front-end</h4>
                 <div className="nav-list">
                     <ul className="list-group">
-                        <li className="list-group-item list-group-item-danger">React.js</li>
-                        <li className="list-group-item list-group-item-warning">Vue.js</li>
-                        <li className="list-group-item list-group-item-info">Blazor WebAssembly i Blazor Server</li>
-                        <li className="list-group-item list-group-item-primary">Razor Pages</li>
-                        <li className="list-group-item list-group-item-secondary">Thymeleaf</li>
-                        <li className="list-group-item list-group-item-light">Angular</li>
-                        <li className="list-group-item list-group-item-dark">Bootstrap</li>
+                        <a className="list-group-item list-group-item-danger"
+                            href="/frontend/react">React.js</a>
+                        <a className="list-group-item list-group-item-warning"
+                            href="/frontend/vue">Vue.js</a>
+                        <a className="list-group-item list-group-item-info"
+                            href="/frontend/blazor">Blazor WebAssembly i Blazor Server</a>
+                        <a className="list-group-item list-group-item-primary"
+                            href="/frontend/razor_pages">Razor Pages</a>
+                        <a className="list-group-item list-group-item-secondary"
+                            href="/frontend/thymeleaf">Thymeleaf</a>
+                        <a className="list-group-item list-group-item-light"
+                            href="/frontend/angular">Angular</a>
+                        <a className="list-group-item list-group-item-dark"
+                            href="/frontend/bootstrap">Bootstrap</a>
                     </ul>
                 </div>
 
                 <h4>Dodatkowe</h4>
                 <div className="nav-list">
                     <ul className="list-group">
-                        <li className="list-group-item list-group-item-secondary">Różne wzorce projektowe</li>
-                        <li className="list-group-item">Rozwiązania chmurowe</li>
-                        <li className="list-group-item list-group-item-primary">Dobre zwyczaje w web developmencie</li>
-                        <li className="list-group-item list-group-item-danger">Git - system kontroli wersji</li>
+                        <a className="list-group-item list-group-item-secondary"
+                            href="/extra/design_patterns">Różne wzorce projektowe</a>
+                        <a className="list-group-item"
+                            href="/extra/could_solutions">Rozwiązania chmurowe</a>
+                        <a className="list-group-item list-group-item-danger"
+                            href="/extra/git">Git - system kontroli wersji</a>
                     </ul>
                 </div>
             </div>
