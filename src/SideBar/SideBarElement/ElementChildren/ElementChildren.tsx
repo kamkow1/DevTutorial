@@ -1,4 +1,5 @@
 import React, {ReactElement} from "react";
+import './ElementChildren.scss';
 
 interface IProps {
     names: string[],
@@ -32,8 +33,8 @@ const ElementChildren: React.FC<IProps> = (props) => {
 
                 return (
                     <li key={i}
-                        className="list-group-item bg-secondary bg-opacity-10">
-                        <a href={url}>
+                        className="list-group-item element">
+                        <a href={url} className="custom-link">
                             {el}
                         </a>
                     </li>
