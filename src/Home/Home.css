@@ -1,3 +1,11 @@
 .home-container {
     margin-top: 2em;
 }
+
+.main-content-wrapper {
+    width: 70em;
+}
+
+.main-content p {
+    text-align: center;
+}
