@@ -5,6 +5,10 @@
   position: absolute;
   margin-left: 15em;
   text-align: left;
+
+  -webkit-box-shadow: 1px 1px 17px -8px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 1px 1px 17px -8px rgba(66, 68, 90, 1);
+  box-shadow: 1px 1px 17px -8px rgba(66, 68, 90, 1);
 }
 
 .projects {
