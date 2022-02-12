@@ -6,11 +6,11 @@ function Home() {
         <div className="text-center home-container">
             <h3>Witaj w DevTutorial - kursie fullstack developmentu!</h3>
             <p>
-                Poniżej wybierz sekcję, do której chcesz przejść
+                W pasku po lewej wybierz sekcję, do której chcesz przejść
             </p>
 
-            <div>
-
+            <div className="container">
+                
             </div>
         </div>
     );
