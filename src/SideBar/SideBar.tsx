@@ -1,77 +1,32 @@
 import React from 'react';
 import './SideBar.scss';
+import SideBarElement from "./SideBarElement/SideBarElement";
 
 const SideBar = () => {
+    const names: string[] = ['ASP.NET',
+                            'Node.js',
+                            'SpringBoot',
+                            'React.js',
+                            'Blazor',
+                            'Azure'
+    ];
+
+    const subtopics: string[][] = [
+        ['Web Api', 'JWT', 'Sesja', 'MVC', 'Logowanie'],
+        ['Web Api', 'JWT', 'Sesja', 'serwowanie html'],
+        ['Web Api', 'JWT', 'Sesja', 'MVC'],
+        ['JSX', 'Stan', 'Props', 'Przekazywanie propsów'],
+        ['Blazor WebAssembly', 'Blazor Server', 'Stan', 'Praca z api', 'Formularze'],
+        ['Bazy danych', 'Azure Functions', 'Metryka', 'Diagnostyka']
+    ];
+
     return (
         <div className="sidebar">
             <div className="nav-list">
                 <ul className="list-group">
-                    <li>
-                        <a className="list-group-item"
-                            href="/backend/asp">ASP.NET</a>
-                    </li>
-                    <li>
-                        <a className="list-group-item list-group-item"
-                            href="/backend/node_express">Node.js i express.js</a>
-                    </li>
-                    <li>
-                        <a className="list-group-item list-group-item"
-                            href="/backend/spring">Spring Framework</a>
-                    </li>
-                    <li>
-                        <a className="list-group-item list-group-item"
-                           href="/backend/laravel">Laravel</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div className="nav-list">
-                <ul className="list-group">
-                    <li>
-                        <a className="list-group-item list-group-item"
-                            href="/frontend/react">React.js</a>
-                    </li>
-                    <li>
-                        <a className="list-group-item list-group-item"
-                            href="/frontend/vue">Vue.js</a>
-                    </li>
-                    <li>
-                        <a className="list-group-item list-group-item"
-                            href="/frontend/blazor">Blazor</a>
-                    </li>
-                    <li>
-                        <a className="list-group-item list-group-item"
-                            href="/frontend/razor_pages">Razor Pages</a>
-                    </li>
-                    <li>
-                        <a className="list-group-item list-group-item"
-                            href="/frontend/thymeleaf">Thymeleaf</a>
-                    </li>
-                    <li>
-                        <a className="list-group-item list-group-item"
-                            href="/frontend/angular">Angular</a>
-                    </li>
-                    <li>
-                        <a className="list-group-item list-group-item"
-                            href="/frontend/bootstrap">Bootstrap</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div className="nav-list">
-                <ul className="list-group">
-                    <li>
-                        <a className="list-group-item list-group-item"
-                            href="/extra/design_patterns">Różne wzorce projektowe</a>
-                    </li>
-                    <li>
-                        <a className="list-group-item"
-                            href="/extra/could_solutions">Rozwiązania chmurowe</a>
-                    </li>
-                    <li>
-                        <a className="list-group-item list-group-item"
-                            href="/extra/git">Git - system kontroli wersji</a>
-                    </li>
+                    {names.map((name, i) => {
+                        return <SideBarElement name={name} key={i} subtopics={subtopics[i]} />;
+                    })}
                 </ul>
             </div>
         </div>
