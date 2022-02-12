@@ -3,7 +3,6 @@ import './App.css';
 import NavBar from './navbar/NavBar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from "./Home/Home";
-import Footer from "./Footer/Footer";
 import SideBar from "./SideBar/SideBar";
 
 function App() {
@@ -20,8 +19,6 @@ function App() {
               </Route>
           </Switch>
       </BrowserRouter>
-
-      <Footer />
     </div>
   );
 }
