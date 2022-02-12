@@ -1,0 +1,26 @@
+@import 'bootstrap';
+
+.sidebar {
+    float: left;
+    background-color: $gray-300;
+    height: 80vh;
+
+    -webkit-box-shadow: 1px 1px 17px -8px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 1px 17px -8px rgba(66, 68, 90, 1);
+    box-shadow: 1px 1px 17px -8px rgba(66, 68, 90, 1);
+}
+
+ul > li {
+
+
+}
+
+.nav-list {
+    width: 15em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    padding-top: 1em;
+}

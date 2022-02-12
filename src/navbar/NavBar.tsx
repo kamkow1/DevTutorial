@@ -17,7 +17,7 @@ class NavBar extends React.Component<any, ISate> {
 
     componentDidMount() {
         $.ajax({
-            url: 'https://api.github.com/users/kamkow1/repos',
+            url: 'https://api.github.com/users/DevTutorialDemos/repos',
             success: (data) => {
                 this.setState({
                     repos: data
