@@ -52,7 +52,7 @@ class SideBarElement extends React.Component<IProps, IState> {
 
                 <Collapse in={this.state.isOpen}>
                     <ul className="list-group">
-                        <ElementChildren names={this.props.subtopics} />
+                        <ElementChildren names={this.props.subtopics} topic={this.props.name} />
                     </ul>
                 </Collapse>
             </li>
