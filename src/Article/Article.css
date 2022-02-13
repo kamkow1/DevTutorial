@@ -1,0 +1,22 @@
+img {
+    width: 60em;
+    /*margin-top: 5em;*/
+    margin-bottom: 5em;
+}
+
+.article {
+    width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-p {
+    padding-top: 2em;
+    text-indent: 2em;
+    text-align: left;
+}
+
+.introduction {
+    text-align: left;
+    text-indent: 2em;
+}

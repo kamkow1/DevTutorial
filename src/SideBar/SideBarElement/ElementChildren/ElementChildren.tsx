@@ -13,14 +13,13 @@ const ElementChildren: React.FC<IProps> = (props) => {
         text.toString()
             .toLowerCase()
 
-
         return text;
     }
 
     return (
         <React.Fragment>
             {elements.map((el, i) => {
-                const url: string = `/courses/${props.topic
+                const url: string = `/articles/${props.topic
                         .toLowerCase()
                         .replace(' ', '')
                         .replace('.', '')}/`
@@ -33,7 +32,7 @@ const ElementChildren: React.FC<IProps> = (props) => {
 
                 return (
                     <li key={i}
-                        className="list-group-item element">
+                        className="list-group-item bg-secondary bg-opacity-10 custom-element">
                         <a href={url} className="custom-link">
                             {el}
                         </a>

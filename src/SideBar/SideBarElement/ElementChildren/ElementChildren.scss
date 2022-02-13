@@ -1,9 +1,9 @@
 @import 'bootstrap';
 
-.element {
-  background-color: $gray-700;
-}
-
 .custom-link {
   color: $gray-500;
+}
+
+.custom-link:hover {
+  color: $gray-200;
 }

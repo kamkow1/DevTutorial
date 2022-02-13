@@ -22,7 +22,6 @@ class SideBarElement extends React.Component<IProps, IState> {
         this.setState({
             isOpen: !this.state.isOpen
         });
-        console.log(this.state);
     }
 
     render () {
@@ -45,7 +44,7 @@ class SideBarElement extends React.Component<IProps, IState> {
 
         return (
             <li className="side-bar-element">
-                <span className={`list-group-item ${this.state.isOpen ? 'active' : ''}`}>
+                <span className={`list-group-item`}>
                     {this.props.name}
                     {caret}
                 </span>

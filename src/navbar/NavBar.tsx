@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Dropdown from "./Dropdown";
 import * as $ from 'jquery';
 import {Repo} from "./Repo";
+import {Collapse, Fade} from "react-bootstrap";
 
 interface ISate {
     isDropdownOpen: boolean
